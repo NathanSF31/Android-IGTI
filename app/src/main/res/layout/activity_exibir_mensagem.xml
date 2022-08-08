@@ -4,28 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ExibirMensagemActivity">
 
-    <EditText
-        android:id="@+id/etMensagem"
+    <TextView
+        android:id="@+id/textViewMensagem"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/insira_uma_msg"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnEnviar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:onClick="enviarMensagem"
-        android:text="@string/enviar"
-        app:layout_constraintBaseline_toBaselineOf="@+id/etMensagem"
-        app:layout_constraintStart_toEndOf="@+id/etMensagem" />
 </androidx.constraintlayout.widget.ConstraintLayout>

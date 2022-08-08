@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IGTI</string>
+    <string name="insira_uma_msg">Insira uma Mensagem</string>
+    <string name="enviar">Enviar</string>
 </resources>

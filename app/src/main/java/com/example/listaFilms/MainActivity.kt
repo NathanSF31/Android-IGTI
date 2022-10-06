@@ -1,13 +1,13 @@
-package com.example.igti
+package com.example.listaFilms
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.igti.R
 
-const val EXTRA_MESSAGE = "br.com.igti.igti.MENSAGEM"
+const val EXTRA_MESSAGE = "MENSAGEM"
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun enviarMensagem(view: View) {
-        Log.i("IGTI", "Método enviarmsg chamado.")
         val editText = findViewById<EditText>(R.id.etMensagem)
         val mensagem = editText.text.toString()
         val intent = Intent(this, ExibirMensagemActivity::class.java).apply {

@@ -1,4 +1,4 @@
-package com.example.igti
+package com.example.listaFilms
 
 import android.os.Bundle
 import android.widget.TextView

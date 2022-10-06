@@ -1,4 +1,4 @@
-package com.example.igti
+package com.example.listaFilms
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
